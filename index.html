@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khanya Ngema – Player Profile 2025/26</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f6f2;--surface:#fff;--ink:#14231b;--muted:#5a6b61;--line:#d5ded7;--pitch:#0f3d2a;--accent:#e0b13a;--on-pitch:#f3f6f2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1511;--surface:#142019;--ink:#e8efe9;--muted:#9bb0a3;--line:#243529;--pitch:#0a2a1d}}
+:root[data-theme="dark"]{--bg:#0c1511;--surface:#142019;--ink:#e8efe9;--muted:#9bb0a3;--line:#243529;--pitch:#0a2a1d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'Source Sans 3',system-ui,sans-serif}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;margin:0;line-height:1}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--pitch);color:var(--on-pitch);padding:56px 0 48px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-120px;top:50%;width:420px;height:420px;border:2px solid rgba(243,246,242,.14);border-radius:50%;transform:translateY(-50%)}
+header.hero::before{content:"";position:absolute;right:89px;top:0;bottom:0;border-left:2px solid rgba(243,246,242,.14)}
+.highlights-link{position:absolute;z-index:3;top:14px;right:max(20px,calc((100vw - 1000px)/2 + 20px));display:inline-flex;align-items:center;justify-content:center;padding:5px;border:1px solid rgba(243,246,242,.45);border-radius:50%;background:rgba(243,246,242,.1);color:var(--on-pitch);text-decoration:none;transition:background .2s ease,transform .2s ease}
+.highlights-link:hover{background:rgba(243,246,242,.2);transform:translateY(-1px)}
+.highlights-link img:not([hidden]),.highlights-link svg:not([hidden]){width:28px;height:28px;display:block;flex:none}
+.highlights-link img{object-fit:cover;border-radius:50%}
+.highlights-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(52px,12vw,112px);font-weight:800;letter-spacing:.01em}
+.hero p.role{font-size:clamp(18px,3vw,24px);margin:14px 0 0;color:var(--accent);font-weight:600}
+.hero p.sub{margin:6px 0 0;opacity:.8}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chips span{border:1px solid rgba(243,246,242,.35);padding:6px 14px;border-radius:999px;font-size:15px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:-28px;position:relative;z-index:2}
+.kpis div{background:var(--surface);padding:18px 16px}
+.kpis b{display:block;font:700 34px/1 'Barlow Condensed',sans-serif}
+.kpis small{color:var(--muted)}
+section{padding:56px 0 0}
+h2{font-size:36px;font-weight:700;margin-bottom:22px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px}
+.card h3{font-size:24px;margin-bottom:12px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px}
+dt{color:var(--muted)}dd{margin:0;font-weight:600}
+.bars{display:grid;gap:11px}
+.bar{display:grid;grid-template-columns:100px 1fr 26px;align-items:center;gap:10px;font-size:15px}
+.track{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--pitch);border-radius:4px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .track i{background:var(--accent)}}
+:root[data-theme="dark"] .track i{background:var(--accent)}
+.bar b{text-align:right}
+.tl{position:relative;margin:0;padding:0;list-style:none}
+.tl::before{content:"";position:absolute;left:92px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl li{display:grid;grid-template-columns:80px 1fr;gap:34px;padding-bottom:30px;position:relative}
+.tl li::before{content:"";position:absolute;left:86px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--pitch)}
+.tl li.now::before{background:var(--accent);border-color:var(--accent)}
+.yr{font:700 24px/1.1 'Barlow Condensed',sans-serif;text-align:right;color:var(--muted)}
+.tl h3{font-size:25px;margin-bottom:4px}
+.tl .tag{color:var(--muted);font-size:15px;margin-bottom:6px}
+.tl p{margin:0}
+.badge{display:inline-block;background:var(--accent);color:#1a1a1a;font-weight:600;font-size:14px;padding:2px 10px;border-radius:4px;margin-top:8px;margin-right:6px}
+ul.clean{margin:0;padding-left:20px}
+ul.clean li{margin-bottom:6px}
+footer{margin-top:64px;background:var(--pitch);color:var(--on-pitch);padding:40px 0}
+footer a{color:var(--accent)}
+footer .grid{gap:12px}
+.herogrid{display:grid;grid-template-columns:1fr 250px;gap:32px;align-items:center}
+.slot{display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;position:relative;overflow:hidden;color:var(--muted);border:2px dashed var(--line);border-radius:6px;background:rgba(127,127,127,.08);font-size:15px;padding:10px}
+.hero .slot{color:var(--on-pitch);border-color:rgba(243,246,242,.4);aspect-ratio:4/5}
+.gal{aspect-ratio:4/3}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gal img{object-fit:contain}
+.gallery-caption{position:absolute;left:8px;bottom:8px;z-index:1;padding:3px 9px;border-radius:4px;background:var(--pitch);color:var(--on-pitch);font-size:13px;font-weight:600;line-height:1.3}
+.tw{overflow-x:auto}
+.st{width:100%;border-collapse:collapse;min-width:520px}
+.st th,.st td{padding:10px 8px;text-align:left;border-bottom:1px solid var(--line)}
+.st th{color:var(--muted);font-weight:600;font-size:14px}
+@media (max-width:560px){
+.tl::before{left:6px}
+.tl li{grid-template-columns:1fr;gap:2px;padding-left:30px}
+.tl li::before{left:0}
+.yr{text-align:left;font-size:20px}
+.hero::after,.hero::before{display:none}.herogrid{grid-template-columns:1fr}.hero .slot{max-width:220px}
+.bar{grid-template-columns:84px 1fr 24px}}
+</style>
+</head>
+<body>
+<header class="hero">
+<a class="highlights-link" href="https://www.youtube.com/@khanyangema" target="_blank" rel="noopener noreferrer" aria-label="Watch Khanya Ngema's YouTube highlights">
+<img src="YT.jpg" alt="" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+<svg viewBox="0 0 28 28" aria-hidden="true" hidden><rect width="28" height="28" rx="8" fill="#ff0033"/><path d="M11 8.5v11l9-5.5z" fill="#fff"/></svg>
+</a>
+<div class="wrap herogrid">
+<div>
+<h1>Khanya Ngema</h1>
+<p class="role">Attacking Midfielder · Winger · Left-Back</p>
+<p class="sub">Real Native FC (known as FC Corinthians in the SAB) · SAB League · Player Profile 2025/26</p>
+<div class="chips"><span>Born 3 March 2006 (age 20)</span><span>South African</span><span>Passport holder</span><span>Open to relocation</span><span>Two-footed</span></div>
+</div>
+<div class="slot"><img src="ID.jpg" alt="Khanya Ngema player portrait"></div>
+</div>
+</header>
+
+<main class="wrap">
+<div class="kpis">
+<div><b>163 cm</b><small>Height (5′4″)</small></div>
+<div><b>4.2 s</b><small>30 m sprint</small></div>
+</div>
+
+<section>
+<h2>Player details</h2>
+<div class="grid">
+<div class="card"><h3>Personal</h3>
+<dl><dt>Full name</dt><dd>Khanya Ngema</dd><dt>Date of birth</dt><dd>3 March 2006 (20)</dd><dt>Nationality</dt><dd>South African</dd><dt>Passport</dt><dd>Yes</dd><dt>Height</dt><dd>163 cm (5′4″)</dd><dt>Preferred foot</dt><dd>Both</dd></dl></div>
+<div class="card"><h3>Position and status</h3>
+<dl><dt>Positions</dt><dd>CAM · LW · RW · LB</dd><dt>Club</dt><dd>Real Native FC (FC Corinthians in the SAB)</dd><dt>League</dt><dd>SAB</dd><dt>Agent</dt><dd>None</dd><dt>Based in</dt><dd>Durban / Pretoria, South Africa</dd></dl></div>
+<div class="card"><h3>Physical testing <small style="font:400 14px 'Source Sans 3',sans-serif;color:var(--muted)">(self-reported)</small></h3>
+<dl><dt>30 m sprint</dt><dd>4.2 seconds</dd><dt>Yo-Yo test</dt><dd>847 m – 1,068 m (level 15.7–17.2)</dd><dt>Vertical jump</dt><dd>42.3 cm</dd></dl></div>
+</div>
+</section>
+
+<section>
+<h2>Career timeline</h2>
+<ol class="tl">
+<li class="now"><div class="yr">2026</div><div><h3>Real Native FC · FC Corinthians (SAB)</h3><div class="tag"> Club football while studying</div><p>Around 13 appearances in 2025/26, five of them starts, with one goal. Mostly used as a substitute. Keeps fit with residence and indoor football and completes the NQF Level 6 Software Engineering qualification at CTU Training Solutions.</p></div></li>
+<li><div class="yr">Late 2025</div><div><h3>Scouted by Real Native FC</h3><div class="tag">Residence football · Pretoria</div><p>Spotted playing residence football and brought into the club&rsquo;s SAB side, where he has been a squad member since.</p><span class="badge">Scouted</span></div></li>
+<li><div class="yr">2024–25</div><div><h3>Move to Pretoria · Tuks trials</h3><div class="tag">Change of province for tertiary study</div><p>Relocated to begin the NQF Level 6 Software Engineering programme and trialled with Tuks. The trial was unsuccessful, and he kept developing through residence football.</p></div></li>
+<li><div class="yr">2023</div><div><h3>Zululand District U19</h3><div class="tag">District representative · Kloof High School Tournament</div><p>Selected for the district&rsquo;s under-19 side and reached the final of the district tournament, finishing as runner-up. Also played the Kloof High School tournament with his school, going out at the group stage. Earned Full Colours at school again, playing first-team football.</p><span class="badge">District runner-up</span><span class="badge">Full Colours</span></div></li>
+<li><div class="yr">2022</div><div><h3>Zululand District U16</h3><div class="tag">District representative · Kloof High School Tournament</div><p>Represented Zululand at under-16 level and won the district tournament. Also reached the Round of 16 at the Kloof High School tournament, and started first-team football at school. Earned Full Colours.</p><span class="badge">District champion</span><span class="badge">Kloof Round of 16</span><span class="badge">Full Colours</span></div></li>
+<li><div class="yr">2021</div><div><h3>Lady Starke Football Academy · KZN Academy</h3><div class="tag">Academy football</div><p>Represented Lady Starke Football Academy and was scouted by KZN Academy after a match against them. Played several games for KZN Academy, though distance and boarding-school commitments limited his availability.</p><span class="badge">Scouted</span></div></li>
+<li><div class="yr">2020–23</div><div><h3>Eshowe High School</h3><div class="tag">Boarding school · First-team football</div><p>Four years of school football while in boarding, including first-team football in 2022 and 2023. Executive Secretary of the Representative Council of Learners in 2023.</p></div></li>
+<li><div class="yr">2014–19</div><div><h3>Stella Football Club · Durban</h3><div class="tag">Grassroots football</div><p>Developed fundamentals over six seasons at Stella FC.</p><span class="badge">Most Improved Player</span></div></li>
+</ol>
+</section>
+
+<section>
+<h2>Playing profile</h2>
+<div class="grid">
+<div class="card"><h3>Technical ratings <small style="font:400 14px 'Source Sans 3',sans-serif;color:var(--muted)">(self-assessed)</small></h3>
+<div class="bars">
+<div class="bar"><span>Dribbling</span><div class="track"><i style="width:80%"></i></div><b>8</b></div>
+<div class="bar"><span>Vision</span><div class="track"><i style="width:70%"></i></div><b>7</b></div>
+<div class="bar"><span>Pace</span><div class="track"><i style="width:70%"></i></div><b>7</b></div>
+<div class="bar"><span>Passing</span><div class="track"><i style="width:60%"></i></div><b>6</b></div>
+<div class="bar"><span>First touch</span><div class="track"><i style="width:60%"></i></div><b>6</b></div>
+<div class="bar"><span>Work rate</span><div class="track"><i style="width:60%"></i></div><b>6</b></div>
+<div class="bar"><span>Shooting</span><div class="track"><i style="width:40%"></i></div><b>4</b></div>
+<div class="bar"><span>Heading</span><div class="track"><i style="width:50%"></i></div><b>5</b></div>
+<div class="bar"><span>Stamina</span><div class="track"><i style="width:50%"></i></div><b>5</b></div>
+<div class="bar"><span>Tackling</span><div class="track"><i style="width:40%"></i></div><b>4</b></div>
+</div></div>
+<div class="card"><h3>Top strengths</h3>
+<ul class="clean"><li><b>1v1 ability.</b> Beats defenders in tight spaces.</li><li><b>Dribbling.</b> Close control at pace with either foot.</li><li><b>Long passing.</b> Switches play and finds runners.</li><li><b>Pressing.</b> Wins the ball high up the pitch.</li></ul>
+<h3 style="margin-top:22px">Development area</h3>
+<ul class="clean"><li>Physicality. Working on strength and stamina to match senior-level contact.</li></ul></div>
+</div>
+</section>
+
+<section>
+<h2>Season stats</h2>
+<div class="card tw"><table class="st"><thead><tr><th>Season</th><th>Club</th><th>Apps</th><th>Starts</th><th>Sub apps</th><th>Goals</th><th>Assists</th><th>Goals / game</th></tr></thead><tbody><tr><td>2025/26</td><td>Real Native FC (FC Corinthians)</td><td>~13</td><td>5</td><td>~8</td><td>1</td><td>0</td><td>0.08</td></tr></tbody></table><p style="margin:12px 0 0;color:var(--muted);font-size:15px">Approximate figures. Mostly used as a substitute in his first senior season.</p></div>
+</section>
+
+<section>
+<h2>Scouting summary</h2>
+<div class="grid">
+<div class="card"><h3>Player type</h3><p style="margin:0">Left-sided creative attacker who is comfortable on either wing, in the number 10 role or at left-back. Two-footed, so he can cut inside or go outside. Gets his threat from dribbling and 1v1 situations, sees passes early and presses to win the ball high. At 163 cm, he relies on quickness and technique rather than size, and is working on strength and stamina.</p></div>
+<div class="card"><h3>Honours</h3><ul class="clean"><li>Most Improved Player, Stella FC (grassroots)</li><li>Zululand U16 district tournament winner (2022)</li><li>Zululand U19 district tournament runner-up (2023)</li><li>Full Colours, Eshowe High School (2022 and 2023)</li><li>Scouted by KZN Academy (2021) and Real Native FC (2025)</li></ul></div>
+<div class="card"><h3>Availability</h3><dl><dt>Status</dt><dd>Open to relocation</dd><dt>Seeking</dt><dd>DDC (Diski Challenge) football, ABC Motsepe League, trials and academy opportunities</dd><dt>Travel</dt><dd>Passport held</dd><dt>Representation</dt><dd>Self-represented</dd><dt>Video</dt><dd>Highlights on YouTube</dd><dt>References</dt><dd>Three coaches listed below</dd></dl></div>
+</div>
+</section>
+
+<section>
+<h2>Education and character</h2>
+<div class="card"><p style="margin:0">Software Engineering student (NQF Level 6, CTU Training Solutions, finishing 2026) and founder of Khanya Digital, a web design and AI automation studio. Combines football with full-time study and running a business, which shows time management and reliability. Former school leadership member (Representative Council of Learners) and Full Colours holder.</p></div>
+</section>
+
+<section>
+<h2>Gallery</h2>
+<div class="grid">
+<label class="slot gal"><img src="BW.JPEG"><span class="gallery-caption">Real Native FC / FC Corinthians</span></label>
+<label class="slot gal"><img src="TUKS.PNG"><span class="gallery-caption">Tuks</span></label>
+<label class="slot gal"><img src="EHS.JPEG"><span class="gallery-caption">Eshowe High School</span></label>
+<label class="slot gal"><img src="KZN.jpeg"><span class="gallery-caption">KZN Academy</span></label>
+<label class="slot gal"><img src="GR.JPEG"><span class="gallery-caption">Stella Football Club</span></label>
+</div>
+</section>
+
+<section>
+<h2>Coach references</h2>
+<div class="grid">
+<div class="card"><h3>Coach Clive Lalo</h3><div class="tag" style="color:var(--muted)">Real Native</div><p style="margin:6px 0 0"><a href="tel:+27641397974" style="color:inherit;font-weight:600">064 139 7974</a></p></div>
+<div class="card"><h3>Coach Senzo</h3><div class="tag" style="color:var(--muted)">Real Native</div><p style="margin:6px 0 0"><a href="tel:+27768663825" style="color:inherit;font-weight:600">076 866 3825</a></p></div>
+<div class="card"><h3>Coach Siyabonga Mnganga</h3><div class="tag" style="color:var(--muted)">Reference</div><p style="margin:6px 0 0"><a href="tel:+27653595572" style="color:inherit;font-weight:600">065 359 5572</a></p></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<h2 style="color:var(--accent)">Contact</h2>
+<div class="grid">
+<div><b>Phone / WhatsApp</b><br>082 789 0120<br>071 853 3701</div>
+<div><b>Email</b><br><a href="mailto:khanyangema5@gmail.com">khanyangema5@gmail.com</a></div>
+<div><b>Highlights</b><br><a href="https://www.youtube.com/@khanyangema">youtube.com/@khanyangema</a></div>
+<div><b>Based in</b><br>Durban / Pretoria, South Africa<br>Open to relocation</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
