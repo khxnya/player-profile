@@ -18,11 +18,15 @@ h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;margin:0;line-
 header.hero{background:var(--pitch);color:var(--on-pitch);padding:56px 0 48px;position:relative;overflow:hidden}
 header.hero::after{content:"";position:absolute;right:-120px;top:50%;width:420px;height:420px;border:2px solid rgba(243,246,242,.14);border-radius:50%;transform:translateY(-50%)}
 header.hero::before{content:"";position:absolute;right:89px;top:0;bottom:0;border-left:2px solid rgba(243,246,242,.14)}
-.highlights-link{position:absolute;z-index:3;top:14px;right:max(20px,calc((100vw - 1000px)/2 + 20px));display:inline-flex;align-items:center;justify-content:center;padding:5px;border:1px solid rgba(243,246,242,.45);border-radius:50%;background:rgba(243,246,242,.1);color:var(--on-pitch);text-decoration:none;transition:background .2s ease,transform .2s ease}
+.top-actions{position:absolute;z-index:3;top:14px;right:max(20px,calc((100vw - 1000px)/2 + 20px));display:flex;align-items:center;gap:10px}
+.highlights-link{display:inline-flex;align-items:center;justify-content:center;padding:5px;border:1px solid rgba(243,246,242,.45);border-radius:50%;background:rgba(243,246,242,.1);color:var(--on-pitch);text-decoration:none;transition:background .2s ease,transform .2s ease}
 .highlights-link:hover{background:rgba(243,246,242,.2);transform:translateY(-1px)}
 .highlights-link img:not([hidden]),.highlights-link svg:not([hidden]){width:28px;height:28px;display:block;flex:none}
 .highlights-link img{object-fit:cover;border-radius:50%}
 .highlights-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.click-me{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border:1px solid rgba(243,246,242,.45);border-radius:999px;background:rgba(224,177,58,.12);color:var(--on-pitch);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background .2s ease,transform .2s ease}
+.click-me:hover{background:rgba(224,177,58,.22);transform:translateY(-1px)}
+.click-me:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .hero .wrap{position:relative;z-index:1}
 .hero h1{font-size:clamp(52px,12vw,112px);font-weight:800;letter-spacing:.01em}
 .hero p.role{font-size:clamp(18px,3vw,24px);margin:14px 0 0;color:var(--accent);font-weight:600}
@@ -84,10 +88,13 @@ footer .grid{gap:12px}
 </head>
 <body>
 <header class="hero">
+<div class="top-actions">
 <a class="highlights-link" href="https://www.youtube.com/@khanyangema" target="_blank" rel="noopener noreferrer" aria-label="Watch Khanya Ngema's YouTube highlights">
 <img src="YT.jpg" alt="" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
 <svg viewBox="0 0 28 28" aria-hidden="true" hidden><rect width="28" height="28" rx="8" fill="#ff0033"/><path d="M11 8.5v11l9-5.5z" fill="#fff"/></svg>
 </a>
+<a class="click-me" href="https://www.youtube.com/@khanyangema" target="_blank" rel="noopener noreferrer">Click me</a>
+</div>
 <div class="wrap herogrid">
 <div>
 <h1>Khanya Ngema</h1>
